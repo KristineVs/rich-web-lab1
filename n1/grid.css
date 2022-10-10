@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+}
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.grid {
+    flex-grow: 0.25;
+    border: 1px solid;
+}
+
+@media (max-width: 720px) {
+    .grid {
+      width: calc(50% - 2px)
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .grid {
+      width: calc(100% - 2px)
+    }
+  }

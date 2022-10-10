@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Notebook</title>
+</head>
+
+<body>
+    <div class="note-container" id="noteCont">
+        <h1>Notebook</h1>
+        <br>
+        <div class="text-container">
+            <textarea id="text-box">
+                Add your note here
+            </textarea>
+            <button id="addTxt">
+                Add note
+            </button>
+            <select onchange="changeColor(event);" class="color" id="chColor">
+                <option id="white" value="white">white</option>
+                <option id="pink" value="pink">pink</option>
+                <option id="yellow" value="yellow">yellow</option>
+                <option id="green" value="green">green</option>
+            </select>
+        </div>
+    </div>
+    <div id="noteShow">
+        <h3>Your notes</h3>
+
+        <div id="notes">
+        </div>
+    </div>
+    <script src="mynote.js"></script>
+</body>
+
+</html>
